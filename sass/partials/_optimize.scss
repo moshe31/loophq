@@ -1,0 +1,136 @@
+    .optimize {
+        .container {
+            padding: 109px 74.74px 53.4px 165.13px;
+        }
+        .upper-sec {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 81.86px;
+            .left-sec {
+                max-width: 590px;
+                width: 100%;
+                .head {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 35.66px;
+                        height: 35.66px;
+                        margin-right: 18.02px;
+                    }
+                    h6 {
+                        @include heading_six;
+                        color: $primary_color;
+                        padding-top: 0;
+                    }
+                }
+                .content {
+                    margin-top: 17.04px;
+                    h3 {
+                        @include heading_three;
+                        line-height: 52px;
+                        text-align: left;
+                        span {
+                            color: $primary_color;
+                            text-decoration: underline;
+                            text-decoration-thickness: 2px;
+                        }
+                    }
+                    h6 {
+                        @include large_text;
+                        font-size: 18px;
+                        margin-top: 22.82px;
+                        padding-top: 0;
+                    }
+                }
+            }
+            .right-sec {
+                max-width: 582px;
+                width: 100%;
+                .video-loop {
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                    .opt-1 {
+                        width: 217.93px;
+                        height: 138.36px;
+                        position: absolute;
+                        top: -35px;
+                        right: -61px;
+                    }
+                    .opt-2 {
+                        width: 119.06px;
+                        height: 174.68px;
+                        position: absolute;
+                        bottom: -29px;
+                        left: -28px;
+                    }
+                    .opt-3 {
+                        width: 217.93px;
+                        height: 215.91 px;
+                        position: absolute;
+                        bottom: -38px;
+                        right: 15px;
+                    }
+                }
+            }
+        }
+        .list {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                li {
+                    width: 100%;
+                    position: relative;
+                    padding-left: 14.17px;
+                    &:before {
+                        content: '';
+                        width: 1px;
+                        height: 157px;
+                        background-color: transparent;
+                        border-left: 1px dashed #d7d7d7;
+                        position: absolute;
+                        top: 62px;
+                        left: 0;
+                    }
+                    &:after {
+                        content: '';
+                        width: 2px;
+                        height: 28.65px;
+                        background-color: $primary_color;
+                        position: absolute;
+                        top: 62px;
+                        left: 0;
+                    }
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+                    p {
+                        margin-top: 14.37px;
+                        @include small_text;
+                        line-height: 28px;
+                    }
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        max-width: 270px;
+                    }
+                    &:nth-child(3) {
+                        max-width: 255px;
+                    }
+                    &:nth-child(4) {
+                        max-width: 295px;
+                    }
+                }
+            }
+        }
+        h6 {
+            padding-top: 38.32px;
+            @include heading_six;
+            color: $primary_color;
+        }
+    }
